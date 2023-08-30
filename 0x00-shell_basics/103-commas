@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sort -df | sed -e 's/$/,/' -e '/\/$/s/$/\//' | tr -d '\n' && echo
+ls -1a | sort -d --ignore-case --field-separator=',' --key=1.2
